@@ -1,13 +1,13 @@
 // Don't commit this file to your public repos. This config is for first-run
 exports.creds = {
   // Requried
-  identityMetadata: 'https://login.microsoftonline.com/<your_tenant_name>.onmicrosoft.com/.well-known/openid-configuration',
+  identityMetadata: 'https://login.microsoftonline.com/sijun.onmicrosoft.com/.well-known/openid-configuration',
   // or 'https://login.microsoftonline.com/<your_tenant_guid>/.well-known/openid-configuration'
   // or you can use the common endpoint
   // 'https://login.microsoftonline.com/common/.well-known/openid-configuration'
   
   // Required
-  clientID: '<client ID>',
+  clientID: '683ead13-3193-43f0-9677-d727c25a588f',
 
   // Required.
   // If you are using the common endpoint, you should either set `validateIssuer` to false, or provide a value for `issuer`.
@@ -23,7 +23,7 @@ exports.creds = {
   issuer: null,
 
   // Optional, default value is clientID
-  audience: null,
+  audience: 'https://graph.windows.net',
 
   // Optional. Default value is false.
   // Set to true if you accept access_token whose `aud` claim contains multiple values.
